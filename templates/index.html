@@ -46,22 +46,22 @@
                     <form id="chillerForm" onsubmit="submitForm(event)">
                         <div class="input-group">
                             <label for="generatorDuty">Generator Duty (kW)</label>
-                            <input type="number" id="generatorDuty" name="generatorDuty" step="0.01" required>
+                            <input type="number" id="generatorDuty" name="generatorDuty" step="0.01" min="500" max="2000" placeholder="500-2000" required>
                         </div>
 
                         <div class="input-group">
                             <label for="pumpPressure">Pump Pressure (kPa)</label>
-                            <input type="number" id="pumpPressure" name="pumpPressure" step="0.01" required>
+                            <input type="number" id="pumpPressure" name="pumpPressure" step="0.01" min="100" max="500" placeholder="100-500" required>
                         </div>
 
                         <div class="input-group">
                             <label for="massFlowRate">Mass Flow Rate (kg/hr)</label>
-                            <input type="number" id="massFlowRate" name="massFlowRate" step="0.01" required>
+                            <input type="number" id="massFlowRate" name="massFlowRate" step="0.01" min="7200" max="19800" placeholder="7200-19800" required>
                         </div>
 
                         <div class="input-group">
                             <label for="chillerInTemp">Chiller Input Temperature (C)</label>
-                            <input type="number" id="chillerInTemp" name="chillerInTemp" step="0.01" required>
+                            <input type="number" id="chillerInTemp" name="chillerInTemp" step="0.01" min="5" max="20" placeholder="5-20" required>
                         </div>
 
                         <button type="submit">Calculate Results</button>
